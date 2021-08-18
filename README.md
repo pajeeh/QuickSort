@@ -1,5 +1,5 @@
 # QuickSort
-Algoritmo do **[Quicksort](https://pt.wikipedia.org/wiki/Quicksort)** implementado em Python. 
+Algoritmo do **[Quicksort](https://pt.wikipedia.org/wiki/Quicksort)** implementado em algumas linguagens de programação.
 
 Assim como o **[Merge Sort](https://pt.wikipedia.org/wiki/Merge_sort)**, o QuickSort é um algoritmo de divisão e conquista. Ele escolhe um elemento como pivô e particiona o array fornecido ao redor do pivô escolhido. Existem muitas versões diferentes do QuickSort que selecionam o pivô de maneiras diferentes.  
 
