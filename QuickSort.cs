@@ -14,3 +14,16 @@ namespace sortQuick
   {
       ordena(0, tam - 1);
    }
+
+  public void ordena(int esquerda, int direita)
+  {
+      int pivo, esquerdaFimse, direitaFimse;
+      esquerdaFimse = esquerda;
+      direitaFimse = direita
+      pivo = array[esquerda];
+    while(esquerda<direita)
+    {
+      while((indice[direita] >= pivo) && (esquerda < direita))
+      {
+        direita--;
+      }
