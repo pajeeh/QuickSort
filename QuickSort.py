@@ -1,13 +1,13 @@
 def quickSort(indice):
-    quickSortLen(indice, 0, len(indice)-1)
+    quickSortTam(indice, len(indice)-1)
   
-def quickSortLen(indice, primeiro, ultimo):
+def quickSortTam(indice, primeiro, ultimo):
 	if primeiro < ultimo:
 		
 		pivo = particao(indice, primeiro, ultimo)
      
-		quickSortLen(indice, primeiro, pivo - 1)
-    	quickSortLen(indice, pivo+1, ultimo)
+		quickSortTam(indice, primeiro, pivo - 1)
+    	quickSortTam(indice, pivo+1, ultimo)
 		
 
 def particao(indice, primeiro, ultimo):
