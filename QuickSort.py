@@ -6,14 +6,14 @@ def quickSortLen(indice, primeiro, ultimo):
 		
 		pivo = particao(indice, primeiro, ultimo)
      
-		quickSortLen(indice, primeiro, pivo-1)
+		quickSortLen(indice, primeiro, pivo - 1)
     	quickSortLen(indice, pivo+1, ultimo)
 		
 
 def particao(indice, primeiro, ultimo):
 	pivoNum = indice[primeiro]
   
-	esquerda = primeiro+1
+	esquerda = primeiro + 1
 	direita = ultimo
   
   	flag = False
