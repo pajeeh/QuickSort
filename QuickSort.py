@@ -9,7 +9,6 @@ def quickSortTam(indice, primeiro, ultimo):
 		quickSortTam(indice, primeiro, pivo - 1)
     	quickSortTam(indice, pivo+1, ultimo)
 		
-
 def particao(indice, primeiro, ultimo):
 	pivoNum = indice[primeiro]
   
@@ -39,5 +38,8 @@ def particao(indice, primeiro, ultimo):
 	return direita
 
 indice = [54, 26, 93, 17, 77, 31, 44, 55, 20, 23]
+
+# implementar tempo de execução para teste de eficiência
+
 quickSort(indice)
 print(indice)
