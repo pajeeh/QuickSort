@@ -1,6 +1,3 @@
-/*  
-*   Algoritmo de ordenação rápida em C#
-*/  
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,11 +7,10 @@ namespace sortQuick
 {
   class quickSort
   {
-  
-  private int[] indice = new int[20];
-  private int tam;
-  
-  public void QuickSort()
+    private int[] indice = new int[20];
+    private int tam;
+
+    public void QuickSort()
   {
       ordena(0, tam - 1);
    }
@@ -25,22 +21,22 @@ namespace sortQuick
       esquerdaFimse = esquerda;
       direitaFimse = direita;
       pivo = indice[esquerda];
-    while(esquerda<direita)
-    {
-      while((indice[direita] >= pivo) && (esquerda < direita))
+      while(esquerda<direita)
       {
-        direita--;
-      }
-      if(esquerda != direita)
+        while((indice[direita] >= pivo) && (esquerda < direita))
         {
+          direita--;
+        }
+        if(esquerda != direita)
+          {
             indice[esquerda] = indice[direita];
             esquerda++;
-        }
-      while((indice[esquerda] <= pivo) && (esquerda < direita))
+          }
+        while((indice[esquerda] <= pivo) && (esquerda < direita))
         {
           esquerda++;
         }
-      if(esquerda != direita)
+        if(esquerda != direita)
         {
           indice[direita] = indice[esquerda];
           direita--;
@@ -60,8 +56,8 @@ namespace sortQuick
         }
   }
 
-  public static void Main()
-  {
+    public static void Main()
+    {
       quickSort qSort = new quickSort();
       int[] indice = {4,3,1,49,6,7,5,41,32,2,26,187,8};
       qSort.indice = indice;
@@ -72,6 +68,6 @@ namespace sortQuick
           Console.WriteLine(qSort.indice[j]);
         }
       Console.ReadKey();
-  }
+    }
   }
 }
