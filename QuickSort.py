@@ -21,7 +21,7 @@ def particao(indice, primeiro, ultimo):
     	while esquerda <= direita and indice[esquerda] <= pivoNum:
 			esquerda = esquerda + 1
 		
-		while indice[direita] >=pivoNum and direita >= esquerda:
+		while indice[direita] >= pivoNum and direita >= esquerda:
 			direita = direita - 1
 	
 		if direita < esquerda:
